@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>replaceChild()</h1>
+
+    <div id="container">
+        <p id="para-1" style="background-color: #3a045cc3; font-size: 28px; border: 1px solid #000">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi debitis, soluta vitae quaerat sapiente molestiae et delectus aut amet! Ab quasi, quidem ad vitae quibusdam ullam vero. Cum, voluptatibus?
+        </p> 
+    </div>
+
+    <button id="btn-1" style="padding: 10px; cursor: pointer; background-color:#bf0f03c3; border:none; border-radius: 10px">Click Me to replace this paragraph</button>
+
+    <script>
+        const parentContainer = document.getElementById("container");
+        const replaceButton = document.getElementById("btn-1");
+        replaceButton.addEventListener("click", ()=> {
+            const newPara = document.createElement("p");
+            newPara.textContent = "Landjaeger t-bone chuck short loin, pastrami burgdoggen kevin capicola sausage brisket drumstick doner. Rump hamburger ribeye pork loin tenderloin, salami tail jowl filet mignon tri-tip";
+
+            parentContainer.replaceChild(newPara, parentContainer.querySelector("#para-1"));
+        });
+    </script>
+    
+</body>
+</html>
