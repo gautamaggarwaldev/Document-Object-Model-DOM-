@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="parent">
+        <p>Child 1</p>
+        <p>Child 2</p>
+    </div>
+
+    <script>
+    const parentElement = document.getElementById("parent");
+    const childElement = parentElement.children; //returns only the immediate child element
+    console.log(childElement);
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textContent</title>
+</head>
+<body>
+
+    <div id="div-1">
+        some text here.
+        <p>some paragraph is written</p>
+    </div>
+
+    <script>
+        const mydiv = document.querySelector("#div-1");
+        mydiv.textContent = "New text is written";
+        console.log(mydiv.textContent);
+    </script>
+    
+    
+</body>
+</html>

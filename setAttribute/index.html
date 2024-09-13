@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            padding: 10px;
+            font-size: xx-large;
+            border: none;
+            border-radius: 10px;
+            background-color: #270bde;
+            color: #ffff;
+        }
+        a {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">Click me!</button>
+
+    <br>
+    <hr>
+
+    <a id="links" href="https://www.google.com" target="_blank">Google</a>
+
+    <br>
+
+    <input type="checkbox" name="age" id="age" checked="true">
+    <label for="age">are you 18 year old</label>
+
+
+    <script>
+        const button = document.getElementById("btn");
+        console.log(button.getAttribute("id"));
+        console.log(button.hasAttribute("id"));
+        console.log(button.hasAttribute("class"));
+        console.log(button.hasAttribute("style"));
+        console.log(button.hasAttribute("color"));
+        button.setAttribute("class", "click-btn");
+        button.setAttribute("border", "20px");
+        button.removeAttribute("class");
+        console.log(button.attributes);
+        console.log(button.setAttribute("data-validation", "required"))
+
+        console.log(button.dataset);
+        console.log(button.dataset.validation);
+
+
+        const link = document.getElementById("links");
+        link.setAttribute("href", "https://www.youtube.com");
+
+        link.innerText = "youtube";
+
+        console.log(link.getAttribute("href"))
+
+
+        const check = document.getElementById("age");
+        check.setAttribute("checked", "false")
+        
+        
+    </script>
+    
+</body>
+</html>

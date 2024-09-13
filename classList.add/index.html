@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="para" style="background-color:#4f4f; font-size:20px; border:2px solid #000;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni est blanditiis iusto non, alias natus obcaecati dolorem deserunt minus aperiam consequatur aspernatur necessitatibus molestias facilis dolores, provident inventore culpa sequi.
+    </p>
+
+    <script>
+        const element = document.getElementById("para");
+        element.classList.add("active", "highlighted", "visible");
+        element.classList.remove("active");
+        element.classList.toggle("render"); // render class is not present before so it add it from the html tag <p></p>
+        element.classList.toggle("visible")// visible class is present before so it remove it from the html tag <p></p>
+        element.classList.toggle("name", true); //forcefully add
+        element.classList.toggle("highlighted", false); //forcefully remove
+
+        const isVisible = element.classList.contains("visible");
+        console.log(isVisible); //false
+        if(isVisible) console.log("visible class is present");
+        else console.log("visible class is not present");
+
+        const isRender = element.classList.contains("render");
+        console.log(isRender); //true
+        if(isRender) console.log("render class is present");
+        else console.log("render class is not present");
+    </script>
+    
+</body>
+</html>

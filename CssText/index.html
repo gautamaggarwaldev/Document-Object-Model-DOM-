@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="para" style="background-color:#4f4f; font-size:20px; border:2px solid #000;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni est blanditiis iusto non, alias natus obcaecati dolorem deserunt minus aperiam consequatur aspernatur necessitatibus molestias facilis dolores, provident inventore culpa sequi.
+    </p>
+
+    <script>
+        const element = document.getElementById("para");
+        const inlineStyles = element.style.cssText;
+        console.log(inlineStyles);
+        element.style.cssText = "color: red; font-size:30px; border:none; background-color:#2dce45; font-weight:bold";
+    </script>
+    
+</body>
+</html>

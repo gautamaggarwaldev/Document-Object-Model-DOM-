@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading-1">First Heading</h1>
+
+    <div>
+        <span id="sp1">Hello!</span>
+    </div>
+
+    <script>
+        const element = document.getElementById("heading-1");
+        const elementStyle = element.style;
+        elementStyle.backgroundColor = "#f8bace";
+        elementStyle.fontSize = "50px";
+
+        const sp = document.getElementById("sp1");
+        sp.style.setProperty("background-color", "#4dface", "important");
+        sp.style.setProperty("font-size", "80px");
+    </script>
+    
+</body>
+</html>
