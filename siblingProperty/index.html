@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="parent">
+        <p>First Child</p>
+        <span>Second Child</span>
+        <p>Third Child</p>
+    </div>
+
+    <script>
+        const firstChild = document.querySelector("#parent > p") //select the first <p> element
+        console.log(firstChild)
+        const nextSiblingElement = firstChild.nextSibling; //It's important to note that nextSibIing might not always return an element node. It can also return text nodes or comments.
+        console.log(nextSiblingElement)
+    </script>
+    
+</body>
+</html>
