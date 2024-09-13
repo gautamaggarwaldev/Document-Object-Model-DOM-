@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h1>append() method</h1>
+
+    <div id="container">
+        <p>There is some paragraph.</p>
+    </div>
+
+    <script>
+        const parentContainer = document.getElementById("container");
+
+        const newDiv = document.createElement("div");
+        const newNode = document.createTextNode("There is a new text node");
+
+        parentContainer.append(newDiv, newNode, "There is some additional text", document.createElement("span"));
+    </script>
     
 </body>
 </html>
