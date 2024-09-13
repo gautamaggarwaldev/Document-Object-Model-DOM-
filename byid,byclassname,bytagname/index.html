@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="border: solid green 3px">
+    <p>Some outer text</p>
+    <p>Some outer text</p>
+
+    <div id="div1" style="border: solid blue 3px">
+        <p>Some div1 text</p>
+        <p>Some div1 text</p>
+        <p>Some div1 text</p>
+
+        <div id="div2" style="border: solid red 3px">
+            <p>Some div2 text</p>
+            <p>Some div2 text</p>
+        </div>
+    </div>
+
+    <p>Some outer text</p>
+    <p>Some outer text</p>
+
+    <button onclick="getAllParaElems();">
+        Show all p elements in document
+    </button>
+    <br />
+
+    <button onclick="div1ParaElems();">
+        Show all p elements in div1 element
+    </button>
+    <br />
+
+    <button onclick="div2ParaElems();">
+        Show all p elements in div2 element
+    </button>
+
+    <!-- <h1 id="first-heading">Heading 1</h1>
+    <button onclick="changecolor('blue');">BLUE</button>
+    <button onclick="changecolor('red');">RED</button>
+
+    <span class="fruit apple">Apple</span>
+    <span class="fruit orange">Orange</span>
+    <span class="fruit kiwi">Kiwi</span>
+    <span class="fruit mango">Mango</span> -->
+</body>
+
+</html>
