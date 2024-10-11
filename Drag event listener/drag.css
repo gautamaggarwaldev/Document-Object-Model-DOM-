@@ -1,0 +1,52 @@
+.lane {
+    width: 100%;
+    height: 150px;
+    background-color: bisque;
+    border: 2px solid black;
+}
+
+.a {
+    background-color: red;
+    width: 180px;
+    height: 150px;
+    text-align: center;
+}
+
+span {
+    font-size: 80px;
+    position: relative;
+    top: 25px;
+}
+
+.img-container {
+    background-color: cadetblue;
+    height: 400px;
+    width: 100%;
+    margin-top: 80px;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.one {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfxpoFgCMRT0JWgXPzl2qPxMTp77A-BTTj3Q&s);
+}
+
+.two {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKxYpDEo2kJoC7ngAMDXm-tIj315EaxzBvhA&s);
+}
+
+.three {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3XZ4y_aDC3QxA8sai7tMzPSef3RuApbESgw&s);
+}
+
+.four {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlBeFAJ048O4KExvwjCS820oDIy_67NeHcug&s);
+}
