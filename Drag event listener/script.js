@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    
-
     image.addEventListener('dragend', (e) => {
         console.log("DragEnd has been trigerred");
         e.target.className = 'img-box';
