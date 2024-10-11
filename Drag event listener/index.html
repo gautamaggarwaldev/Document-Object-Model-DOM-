@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag</title>
+
+    <style>
+        body {
+            background-color:dodgerblue;
+        }
+        .img-box {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy6AK0LsvdfHWQwybQhm_JF0MaU-IO9rmFng&s);
+            height: 190px;
+            width: 190px;
+            position: relative;
+            top: 5px;
+            left: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .whitebox {
+            display: inline-block;
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            margin-left: 25px;
+            border: 3px solid black;
+        }
+
+        .hold {
+            border: 5px solid purple;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .dashed {
+            border: 2px dashed black;
+            background-color: coral;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="whitebox">
+        <div class="img-box" draggable="true"></div>
+    </div>
+    <div class="whitebox"></div>
+    <div class="whitebox"></div>
+    <div class="whitebox"></div>
+
+        
+    
+   
+
+    <script src="script.js"> </script>
+
+</body>
+
+</html>
